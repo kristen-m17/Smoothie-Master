@@ -6,16 +6,16 @@ padding: 70px;
 }
 
 fieldset{
-	font-family: "Comic Sans MS",cursive,sans-serif;
+	font-family: "Lucida Bright, Georgia, serif";
 }
 
 h1{
-	font-family: "Comic Sans MS",cursive,sans-serif;
+	font-family: "Lucida Bright, Georgia, serif";
 	text-decoration:underline;
 }
 
 p{
-	font-family: "Comic Sans MS",cursive,sans-serif;
+	font-family: "Lucida Bright, Georgia, serif";
 }
 
 table,th,td {
@@ -29,7 +29,8 @@ th,td{
 }
 
 caption {
-	font-family:"Comic Sans Ms",cursive,sans-serif;
+	font-family:"Lucida Bright, Georgia, serif";
 	font-size:30px;
 	text-decoration:underline;
 }
+
