@@ -20,3 +20,12 @@ document.getElementById("ingredient4_name").innerHTML = ingredient4.value;
 document.getElementById("ingredient5_name").innerHTML = ingredient5.value;
 }
 
+function ClearFields(){
+        document.getElementById("smoothie").value="";
+		document.getElementById("ingredient1").value="";
+		document.getElementById("ingredient2").value="";
+		document.getElementById("ingredient3").value="";
+		document.getElementById("ingredient4").value="";
+		document.getElementById("ingredient5").value="";
+		
+}
