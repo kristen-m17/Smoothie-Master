@@ -56,11 +56,11 @@ body {
 	}
 
 
-.button1 {border-style:solid; border-radius: 50%; border-color:#006D44;}
-.button2 {border-style:solid; border-color:#006D44; border-radius: 50%;}
+.button {border-style:solid; border-color:#006D44; border-radius: 50%;}
+<!--.button2 {border-style:solid; border-color:#006D44; border-radius: 50%;}
 .button3 {border-style:solid; border-color:#006D44; border-radius: 50%;}
 .button4 {border-style:solid; border-color:#006D44; border-radius: 50%;}
-.button5 {border-style:solid; border-color:#006D44; border-radius: 50%;}
+.button5 {border-style:solid; border-color:#006D44; border-radius: 50%;}-->
 
 
 p {
@@ -80,6 +80,13 @@ h2 {
   margin-top: 23px;
   right: -580px;
 }
+
+fieldset{
+	border:0;
+}
+
+
+
 </style>
 </head>
 <body>
@@ -100,10 +107,10 @@ h2 {
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#aboutMadi.html">About</a>
+                        <a href="#">About</a>
                     </li>
                     <li>
-                        <a href="ingredients.html">Smoothie Maker</a>
+                        <a href="onclick button for ingrdients.html">Smoothie Maker</a>
                     </li>
                     <li>
                         <a href="postSmoothie.html">Your Recipes</a>
@@ -119,44 +126,157 @@ h2 {
 <h2>Ingredients</h2>
 <p>Base:</p>
 
-<button id="milk" class="button button1">Milk</button>
-<button id="yogurt" class="button button2">Yogurt</button>
-<button id="water" class="button button3">Water</button>
-<button id="apple juice" class="button button4">Apple Juice</button>
-<button id="orange juice" class="button button5">Orange Juice</button>
+<button id="milk" class="button" onclick=addSearch("milk")>Milk</button>
+<button id="yogurt" class="button" onclick=addSearch("yogurt")>Yogurt</button>
+<button id="water" class="button"onclick=addSearch("water")>Water</button>
+<button id="apple_juice" class="button" onclick=addSearch("apple_juice")>Apple Juice</button>
+<button id="orange_juice" class="button" onclick=addSearch("orange_juice")>Orange Juice</button>
 
 <p>Fruits:</p>
 
-<button id="strawberry" class="button button1">Strawberry</button>
-<button id="banana" class="button button2">Banana</button>
-<button id="mango" class="button button3">Mango</button>
-<button id="raspberry" class="button button4">Raspberry</button>
-<button id="blueberry" class="button button5">Blueberry</button>
+<button id="strawberry" class="button" onclick=addSearch("strawberry")>Strawberry</button>
+<button id="banana" class="button" onclick=addSearch("banana")>Banana</button>
+<button id="mango" class="button" onclick=addSearch("mango")>Mango</button>
+<button id="raspberry" class="button" onclick=addSearch("raspberry")>Raspberry</button>
+<button id="blueberry" class="button" onclick=addSearch("blueberry")>Blueberry</button>
 
 <p>Vegetables:</p>
-<button id="kale" class="button button1">Kale</button>
-<button id="wheat grass" class="button button2">Wheat Grass</button>
-<button id="spinach" class="button button3">Spinach</button>
-<button id="celery" class="button button4">Celery</button>
-<button id="carrots" class="button button5">Carrots</button>
+<button id="kale" class="button" onclick=addSearch("kale")>Kale</button>
+<button id="wheat_grass" class="button" onclick=addSearch("wheat_grass")>Wheat Grass</button>
+<button id="spinach" class="button" onclick=addSearch("spinach")>Spinach</button>
+<button id="celery" class="button" onclick=addSearch("celery")>Celery</button>
+<button id="carrots" class="button" onclick=addSearch("carrots")>Carrots</button>
 
 <p>Extras:</p>
-<button id="honey" class="button button1">Honey</button>
-<button id="ginger" class="button button2">Ginger</button>
-<button id="chia seeds" class="button button3">Chia Seeds</button>
-<button id="flax seeds" class="button button4">Flax Seeds</button>
-<button id="Almonds" class="button button5">Almonds</button>
+<button id="honey" class="button" onclick=addSearch("honey")>Honey</button>
+<button id="ginger" class="button" onclick=addSearch("ginger")>Ginger</button>
+<button id="chia_seeds" class="button" onclick=addSearch("chia_seeds")>Chia Seeds</button>
+<button id="flax_seeds" class="button" onclick=addSearch("flax_seeds")>Flax Seeds</button>
+<button id="almonds" class="button" onclick=addSearch("almonds")>Almonds</button>
 
-
+<fieldset>
+<legend align="middle">
 	<div id="tfheader">
-    <form id="tfnewsearch" method="get" action="index.html">
-        <input type="text" class="tftextinput" id="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="search" class="tfbutton">
+    <!--<form id="tfnewsearch" method="get">
+        <input type="hidden" class="tftextinput" id="tftextinput" name="q" size="21" maxlength="120">--><input type="button" value="Search" onclick=smoothieFind()><!--class="tfbutton"--> 
+		<input type="button" value="Reset" class="tfbutton" onclick=clearSearch()>
     </form>
 <div class="tfclear"></div>
-</div>
+	</div>
+</fieldset>
+
+<div class="row">
+            <div id="raspberryBlueberry" class="col-sm-4">
+                <img class="img-circle img-responsive img-center" src="smoothie1.jpg" alt="" style="height:100px;width:100px;">
+                <h2>Raspberry Blueberry Smoothie</h2>
+                <li>3/4 cup frozen raspberries</li>
+				<li>1/2 cup frozen blueberries</li>
+				<li>1 frozen ripe banana</li>
+				<li>3/4 cup low-fat vanilla or greek yogurt</li>
+				<li>1/2 cup milk (any of your choice)</li>
+				<li>sweeten to taste</li>
+            </div>
+            <div id="bananaGinger" class="col-sm-4">
+                <img class="img-circle img-responsive img-center" src="banana.jpg" alt=""style="height:100px;width:100px;">
+                <h2>Banana Ginger Smoothie</h2>
+                <li>1 banana</li>
+				<li>3/4 cup vanilla yogurt</li>
+				<li> 1 tbsp honey</li>
+				<li>1/2 tsp ginger</li>
+            </div>
+            <div id="mangoBanana" class="col-sm-4">
+                <img class="img-circle img-responsiveimg-center" src="mango.jpg" alt=""style="height:100px;width:100px;">
+                <h2>Mango Banana Smoothie</h2>
+                <li>1 medium mango</li>
+				<li> 1 banana</li>
+				<li>2 1/4 cup orange juice</li>
+				<li>4 ice cubes</li>
+            </div>
+        </div>
+
+<script>
+
+var searchList=[];
+
+function addSearch(id){
+var search = document.getElementById(id);
+	searchList.push(id);
+	search.style.backgroundColor = "#006D44";
+}
+
+function clearSearch(){
+var button = document.getElementsByClassName("button");
+
+for (i=0; i<button.length; i++){
+button[i].style.backgroundColor = "#00eD93";
+}
+
+
+searchList=[];
+document.getElementById("mangoBanana").style.visibility = "hidden";
+document.getElementById("bananaGinger").style.visibility = "hidden";
+document.getElementById("raspberryBlueberry").style.visibility = "hidden";
+
+}
+
+var mangoBanana=["mango","banana","orange_juice"];
+var bananaGinger=["banana","yogurt","honey","ginger"];
+var raspberryBlueberry=["raspberry","blueberry","banana","yogurt","milk"];		
+
+document.getElementById("mangoBanana").style.visibility = "hidden";
+document.getElementById("bananaGinger").style.visibility = "hidden";
+document.getElementById("raspberryBlueberry").style.visibility = "hidden";
+
+function smoothieFind(){
+
+var match1=0;
+for (i=0; i<searchList.length; i++)	{
+	for (j=0; j<mangoBanana.length; j++){
+		if (searchList[i]==mangoBanana[j]){
+			match1++;
+		}
+	}
+}
+if(match1>=3){
+	document.getElementById("mangoBanana").style.visibility = "visible";
+}
+
+var match2=0;
+for (i=0; i<searchList.length; i++)	{
+	for (j=0; j<raspberryBlueberry.length; j++){
+		if (searchList[i]==raspberryBlueberry[j]){
+			match2++;
+		}
+	}
+}
+if(match2>=3){
+	document.getElementById("raspberryBlueberry").style.visibility = "visible";
+}
+
+
+var match3=0;
+for (i=0; i<searchList.length; i++)	{
+	for (j=0; j<bananaGinger.length; j++){
+		if (searchList[i]==bananaGinger[j]){
+			match3++;
+		}
+	}
+}
+if(match3>=3){
+	document.getElementById("bananaGinger").style.visibility = "visible";
+}
+}
 
 
 
+/*function resetElement() {
+    document.getElementById("imgbox1").style.display = "block";
+    document.getElementById("imgbox2").style.visibility = "visible";
+}*/
+
+
+	
+	
 </script>
 
 

@@ -5,3 +5,31 @@ margin:10px;
 padding: 70px;
 }
 
+fieldset{
+	font-family: "Comic Sans MS",cursive,sans-serif;
+}
+
+h1{
+	font-family: "Comic Sans MS",cursive,sans-serif;
+	text-decoration:underline;
+}
+
+p{
+	font-family: "Comic Sans MS",cursive,sans-serif;
+}
+
+table,th,td {
+	border:1px,solid black;
+	border-collapse:collapse;
+}
+
+th,td{
+	padding:5px;
+	text-align:left;
+}
+
+caption {
+	font-family:"Comic Sans Ms",cursive,sans-serif;
+	font-size:30px;
+	text-decoration:underline;
+}
