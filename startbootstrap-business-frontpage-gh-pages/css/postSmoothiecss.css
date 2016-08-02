@@ -1,3 +1,11 @@
+body {
+	text-align:center;
+	height:100px;
+	background-color: #FF9966;
+	background-image: linear-gradient(#FF9966,#FFFF99);
+	background-size:100%,100%;
+	background-repeat:no-repeat;
+	}
 
 fieldset{
 border:0;
@@ -7,20 +15,27 @@ padding: 70px;
 
 fieldset{
 	font-family: "Lucida Bright, Georgia, serif";
+	color:#33001a
 }
 
 h1{
 	font-family: "Lucida Bright, Georgia, serif";
 	text-decoration:underline;
+	color:#33001a;
 }
 
 p{
 	font-family: "Lucida Bright, Georgia, serif";
+	color:#33001a;
+}
+
+table {
+	border-collapse:collapse;
 }
 
 table,th,td {
 	border:1px,solid black;
-	border-collapse:collapse;
+	
 }
 
 th,td{
@@ -31,6 +46,11 @@ th,td{
 caption {
 	font-family:"Lucida Bright, Georgia, serif";
 	font-size:30px;
-	text-decoration:underline;
+	color:#33001a;
+}
+
+tr {
+	text-transform: capitalize;
+	font-weight: bold;
 }
 
