@@ -32,7 +32,7 @@
 	
 	
 	<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-		
+	
 <style>
 .button {
     background-color: #00eD93; /* turquoise */
@@ -47,10 +47,13 @@
     cursor: pointer;
 }
 
+
+
 body {
 	text-align:center;
 	height:100px;
 	background-color: #FF9966;
+	background-image: linear-gradient(#FF9966,#FFFF99);
 	background-size:100%,100%;
 	background-repeat:no-repeat;
 	}
@@ -107,10 +110,10 @@ fieldset{
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">About</a>
+                        <a href="aboutMadi.html">About</a>
                     </li>
                     <li>
-                        <a href="onclick button for ingrdients.html">Smoothie Maker</a>
+                        <a href="ingredients.html">Smoothie Maker</a>
                     </li>
                     <li>
                         <a href="postSmoothie.html">Your Recipes</a>
@@ -201,7 +204,8 @@ var searchList=[];
 function addSearch(id){
 var search = document.getElementById(id);
 	searchList.push(id);
-	search.style.backgroundColor = "#006D44";
+	search.style.backgroundColor = "#f9aa19";
+	search.style.borderColor="#E37800";
 }
 
 function clearSearch(){
@@ -209,6 +213,7 @@ var button = document.getElementsByClassName("button");
 
 for (i=0; i<button.length; i++){
 button[i].style.backgroundColor = "#00eD93";
+button [i].style.borderColor="#006D44";
 }
 
 
