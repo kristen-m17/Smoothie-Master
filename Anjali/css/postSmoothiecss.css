@@ -1,0 +1,36 @@
+
+fieldset{
+border:0;
+margin:10px;
+padding: 70px;
+}
+
+fieldset{
+	font-family: "Lucida Bright, Georgia, serif";
+}
+
+h1{
+	font-family: "Lucida Bright, Georgia, serif";
+	text-decoration:underline;
+}
+
+p{
+	font-family: "Lucida Bright, Georgia, serif";
+}
+
+table,th,td {
+	border:1px,solid black;
+	border-collapse:collapse;
+}
+
+th,td{
+	padding:5px;
+	text-align:left;
+}
+
+caption {
+	font-family:"Lucida Bright, Georgia, serif";
+	font-size:30px;
+	text-decoration:underline;
+}
+
