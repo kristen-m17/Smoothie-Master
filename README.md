@@ -1,1 +1,1 @@
-# Smoothie-Master
+# Smoothie-Master by Kristen, Anjali and Madison
